@@ -11,7 +11,7 @@
     <Button
         android:text="продолжить"
         android:fontFamily="@font/font"
-        android:textSize="48dp"
+        android:textSize="48sp"
         android:id="@+id/nextWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         android:textColor="#FFBF00"
         android:text="Каждую неделю проводится конкурс, на котором у вас есть шанс попасть в другую компаю. Работайте! И ваш шанс на победу будет повышаться!"
         android:textAlignment="center"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.66"

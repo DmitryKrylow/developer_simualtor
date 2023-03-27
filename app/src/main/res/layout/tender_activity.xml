@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".gameClass.Tender"
+    android:orientation="vertical"
+    android:background="@mipmap/background_new">
+
+    <TextView
+        android:background="@drawable/back_text_alpha"
+        android:textAlignment="center"
+        android:id="@+id/tender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/font"
+        android:text="Поздравляю!\nВы выиграли в конкурсе!\nВаш шанс: 25\nТеперь ваша компания:\nНазвание: %s\nЗаработная плата: %d $\n Требуется сил: %d\nПопулярность: %d"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/font"
+        android:text="Закрыть"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tender"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <Button
+        android:layout_margin="48dp"
+        android:id="@+id/buttonYES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ДА"
+        android:fontFamily="@font/font"
+        android:textSize="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tender" />
+
+    <Button
+        android:fontFamily="@font/font"
+        android:textSize="24dp"
+        android:text="НЕТ"
+        android:id="@+id/buttonNO"
+        android:layout_margin="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toEndOf="@+id/buttonYES"
+        app:layout_constraintTop_toBottomOf="@+id/tender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
